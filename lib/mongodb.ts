@@ -6,7 +6,7 @@ const options = {};
 declare global {
   var _mongoClientPromise: Promise<MongoClient>;
 }
-
+console.log('start=', uri)
 class Singleton {
   private static _instance: Singleton;
   private client: MongoClient;
